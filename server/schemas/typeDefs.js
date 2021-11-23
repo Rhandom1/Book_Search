@@ -7,6 +7,7 @@ const typeDefs = gql`
     }
     type User {
         _id: ID
+        username: String!
         email: String
         bookCount: Int
         saveBooks: [Book]
@@ -40,3 +41,5 @@ const typeDefs = gql`
 `;
 
 module.exports = typeDefs;
+
+// addUser("test","test@test.com", "password")

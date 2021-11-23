@@ -14,6 +14,7 @@ const PORT = process.env.PORT || 3001;
 const server = new ApolloServer ({
   typeDefs,
   resolvers,
+  formatError: (error) => error,
   context: authMiddleWare
 });
 
