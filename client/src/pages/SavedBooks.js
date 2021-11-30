@@ -49,8 +49,8 @@ const SavedBooks = () => {
       </Jumbotron>
       <Container>
         <h2>
-          {userData.savedBooks
-            ? `Viewing ${userData.savedBooks} saved ${userData.savedBooks.length === 1 ? 'book' : 'books'}:`
+          {userData.savedBooks.length
+            ? `Viewing ${userData.savedBooks.length} saved ${userData.savedBooks.length === 1 ? 'book' : 'books'}:`
             : 'You have no saved books!'}
         </h2>
         <CardColumns>
