@@ -33,7 +33,7 @@ export const SAVE_BOOK = gql`
       _id
       email
       bookCount
-      saveBooks {
+      savedBooks {
         bookID
         authors
         image
